@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.btcmarkets.net/market/BTC/AUD/tick
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.btcmarkets.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2017 12:29:15 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '138'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d059b7a4a3784d871633f35129af254f01510144155; expires=Thu, 08-Nov-18
+        12:29:15 GMT; path=/; domain=.btcmarkets.net; HttpOnly
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3ba8896b8b1b1d98-MEL
+    body:
+      encoding: UTF-8
+      string: '{"bestBid":9847.19,"bestAsk":9850.78,"lastPrice":9850.78,"currency":"AUD","instrument":"BTC","timestamp":1510144148,"volume24h":326.01738}'
+    http_version: 
+  recorded_at: Wed, 08 Nov 2017 12:29:15 GMT
+recorded_with: VCR 3.0.3
